@@ -1,7 +1,0 @@
-README.md
-setup.py
-mumu.egg-info/PKG-INFO
-mumu.egg-info/SOURCES.txt
-mumu.egg-info/dependency_links.txt
-mumu.egg-info/not-zip-safe
-mumu.egg-info/top_level.txt
