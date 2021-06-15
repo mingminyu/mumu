@@ -1,4 +1,6 @@
-from setuptools import setup
+from __future__ import absolute_import
+import versioneer
+from setuptools import setup, find_packages
 
 
 def readme():
@@ -8,8 +10,10 @@ def readme():
 
 setup(
     name='mumu',
-    version='0.0.4',
-    packages=[''],
+    version=versioneer.get_version(),
+    cmdclass=versioneer.get_cmdclass(),
+    platforms=["all"],
+    packages=find_packages(),
     url='https://github.com/mingminyu/mumu',
     license='Apache License, Version 2.0',
     author='yumingmin',
@@ -24,8 +28,11 @@ setup(
             'Programming Language :: Python :: 3.8',
             'Programming Language :: Python :: 3.9'
         ],
+    keywords=('machine-learning python impala hive sql workchat monitor'
+              'email airflow'),
     install_package_data=True,
     install_requires=[],
     zip_safe=False,
+    extras_require={},
     description='mumu is an integrated tool for machine learning.'
 )
