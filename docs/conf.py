@@ -48,7 +48,7 @@ extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx_rtd_theme',
-    'numpydoc',
+    # 'numpydoc',
     'nbsphinx',
 ]
 
