@@ -14,7 +14,7 @@ import os
 import sys
 import shutil
 import sphinx_rtd_theme
-print(os.path.abspath('./shap'))
+print(os.path.abspath('./mumu'))
 sys.path.insert(0, os.path.abspath('..'))
 
 # make copy of notebooks in docs folder, as they must be here for sphinx to

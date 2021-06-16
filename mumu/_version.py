@@ -54,8 +54,8 @@ class NotThisMethod(Exception):
 HANDLERS = {}
 
 
-def register_vcs_handler(vcs, method):  # decorator
-    """Create decorator to mark a method as the handler of a VCS."""
+def register_vcs_handler(vcs, method):  # decorators
+    """Create decorators to mark a method as the handler of a VCS."""
 
     def decorate(f):
         """Store f in HANDLERS[vcs][method]."""

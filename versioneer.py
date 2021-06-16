@@ -302,7 +302,7 @@ LONG_VERSION_PY = {}
 HANDLERS = {}
 
 
-def register_vcs_handler(vcs, method):  # decorator
+def register_vcs_handler(vcs, method):  # decorators
     """Decorator to mark a method as the handler for a particular VCS."""
     def decorate(f):
         """Store f in HANDLERS[vcs][method]."""
@@ -391,7 +391,7 @@ class NotThisMethod(Exception):
     """Exception raised if a method is not valid for the current scenario."""
 LONG_VERSION_PY = {}
 HANDLERS = {}
-def register_vcs_handler(vcs, method):  # decorator
+def register_vcs_handler(vcs, method):  # decorators
     """Decorator to mark a method as the handler for a particular VCS."""
     def decorate(f):
         """Store f in HANDLERS[vcs][method]."""
