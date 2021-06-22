@@ -578,3 +578,5 @@ dmypy.json
 
 data/
 mumu.egg-info/
+mumu/settings.py
+

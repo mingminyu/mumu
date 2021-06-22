@@ -28,7 +28,7 @@ setup(
             'Programming Language :: Python :: 3.8',
             'Programming Language :: Python :: 3.9'
         ],
-    keywords=('machine-learning python impala hive sql workchat monitor'
+    keywords=('machine-learning python impala hive sql monitor'
               'email airflow'),
     install_package_data=True,
     install_requires=[],
