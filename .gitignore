@@ -579,4 +579,5 @@ dmypy.json
 data/
 mumu.egg-info/
 mumu/settings.py
-
+/examples/project.cfg
+/notebooks/project.cfg
