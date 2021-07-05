@@ -1,8 +1,8 @@
+nbsphinx
 sphinx
 recommonmark
 sphinx-autobuild
 sphinx_rtd_theme
-nbsphinx==0.8.6
 pandas
 numpy
 tqdm

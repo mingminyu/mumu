@@ -45,11 +45,11 @@ master_doc = 'index'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    'nbsphinx',
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx_rtd_theme',
     # 'numpydoc',
-    'nbsphinx',
 ]
 
 autodoc_default_options = {
