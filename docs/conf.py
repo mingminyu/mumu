@@ -49,7 +49,7 @@ extensions = [
     'sphinx.ext.autosummary',
     'sphinx_rtd_theme',
     # 'numpydoc',
-    # 'nbsphinx',
+    'nbsphinx',
 ]
 
 autodoc_default_options = {

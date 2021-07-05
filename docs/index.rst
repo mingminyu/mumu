@@ -15,11 +15,8 @@ Mumu can be installed `PyPI <https://pypi.org/project/mumu>`_::
    pip install mumu
 
 
-
-
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
 
 Contents
@@ -27,7 +24,6 @@ Contents
 
 .. toctree::
    :maxdepth: 2
-   :caption: Contents:
 
    Topical overviews <overviews>
    Feature examples <feature_examples>
