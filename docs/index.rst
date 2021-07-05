@@ -3,13 +3,36 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Mumu's documentation!
+Welcome to Mumu documentation!
 ================================
+
+
+Install
+=======
+
+Mumu can be installed `PyPI <https://pypi.org/project/mumu>`_::
+
+   pip install mumu
+
+
+
 
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
 
+
+Contents
+========
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   Topical overviews <overviews>
+   Feature examples <feature_examples>
+   DB examples <db_examples>
+   Robots examples <robots_examples>
 
 
 Indices and tables
@@ -18,3 +41,4 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+

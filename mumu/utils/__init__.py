@@ -7,6 +7,9 @@
 # Date: 2021/6/23 12:57
 # Description:
 # ================================================
+from ._pandas import df_to_png
+from ._pandas import value_counts_top_n as vc_top_n
+from ._pandas import value_counts_bottom_n as vc_bot_n
 
 
 def str_to_list(s="", delimiter=","):
