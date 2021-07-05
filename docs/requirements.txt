@@ -1,0 +1,5 @@
+nbsphinx
+sphinx
+recommonmark
+sphinx-autobuild
+sphinx_rtd_theme
