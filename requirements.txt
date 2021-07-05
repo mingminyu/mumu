@@ -3,6 +3,7 @@ sphinx
 recommonmark
 sphinx-autobuild
 sphinx_rtd_theme
+jupyter
 pandas
 numpy
 tqdm
