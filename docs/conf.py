@@ -45,11 +45,11 @@ master_doc = 'index'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'nbsphinx',
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx_rtd_theme',
     # 'numpydoc',
+    'nbsphinx',
 ]
 
 autodoc_default_options = {
@@ -163,7 +163,7 @@ html_theme_options = {
 }
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-html_logo = 'logo/mumu_logo.png'
+html_logo = 'logo/mumu.png'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -183,7 +183,7 @@ html_static_path = ['_static']
 # the docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
 # pixels large.
 #
-html_favicon = 'artwork/favicon.ico'
+html_favicon = 'logo/favicon.ico'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -374,33 +374,6 @@ texinfo_documents = [
 
 
 def setup(app):
-    # import shap
-    # # need to assign the names here, otherwise autodoc won't document these classes,
-    # # and will instead just say 'alias of ...'
-    # shap.explainers.Tree.__name__ = "Tree"
-    # shap.explainers.Tree.__module__ = "shap.explainers"
-    # shap.explainers.GPUTree.__name__ = "GPUTree"
-    # shap.explainers.GPUTree.__module__ = "shap.explainers"
-    # shap.explainers.Linear.__name__ = "Linear"
-    # shap.explainers.Linear.__module__ = "shap.explainers"
-    # shap.explainers.Permutation.__name__ = "Permutation"
-    # shap.explainers.Permutation.__module__ = "shap.explainers"
-    # shap.explainers.Partition.__name__ = "Partition"
-    # shap.explainers.Partition.__module__ = "shap.explainers"
-    # shap.explainers.Sampling.__name__ = "Sampling"
-    # shap.explainers.Sampling.__module__ = "shap.explainers"
-    # shap.explainers.Additive.__name__ = "Additive"
-    # shap.explainers.Additive.__module__ = "shap.explainers"
-    # # shap.TreeExplainer.__name__ = 'TreeExplainer'
-    # # shap.GPUTreeExplainer.__name__ = 'GPUTreeExplainer'
-    # # shap.LinearExplainer.__name__ = 'LinearExplainer'
-    # # shap.KernelExplainer.__name__ = 'KernelExplainer'
-    # # shap.SamplingExplainer.__name__ = 'SamplingExplainer'
-    # # shap.DeepExplainer.__name__ = 'DeepExplainer'
-    # # shap.GradientExplainer.__name__ = 'GradientExplainer'
-    # # shap.PartitionExplainer.__name__ = 'PartitionExplainer'
-    # # shap.PermutationExplainer.__name__ = 'PermutationExplainer'
-    # # shap.AdditiveExplainer.__name__ = 'AdditiveExplainer'
     app.connect('build-finished', build_finished)
 
 

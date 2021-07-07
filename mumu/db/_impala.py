@@ -1,7 +1,7 @@
 # coding: utf-8
 # ================================================
 # Project: mumu
-# File: db/impala.py
+# File: db/_impala.py
 # Author: Mingmin Yu
 # Email: yu_mingm623@163.com
 # Date: 2021/6/22 17:02
@@ -12,7 +12,6 @@ import re
 import time
 import logging
 import pandas as pd
-import numpy as np
 from impala.dbapi import connect
 from impala.util import as_pandas
 from mumu.decorators import pbar_sql_query, timeit, retry
@@ -201,22 +200,21 @@ class ImpalaRunner(object):
             return df
 
     def run_sql_block(self, sql_name=None):
-
         @retry(n=self.retry_times, sleep_time=self.sleep_time)
-        def _run_sql_block(sql_name=None):
+        def _run_sql_block(sqlname=None):
             """According to `sql_name` to execute corresponding sql.
 
-            :param sql_name: str, index for block sql in filename.
+            :param sqlname: str, index for block sql in filename.
             :return: DataFrame
             """
-            if sql_name is not None:
-                sqls = self.sqls[sql_name]
+            if sqlname is not None:
+                sqls = self.sqls[sqlname]
                 results = [self._run_sql(sql) for sql in sqls.split(";")]
             else:
                 results = []
 
-                for sql_name in self.sqls.keys():
-                    sqls = self.sqls[sql_name]
+                for sn in self.sqls.keys():
+                    sqls = self.sqls[sn]
                     results += [self._run_sql(sql) for sql in sqls.split(";")]
 
             results = [res for res in results if not res.empty]
@@ -224,4 +222,20 @@ class ImpalaRunner(object):
 
             return df
 
-        _run_sql_block(sql_name)
+        df = _run_sql_block(sqlname=sql_name)
+        return df
+
+
+def impala_query(config=None, sql=None, context=None, verbose=True):
+    """Run one query sql
+
+    :param config:
+    :param sql:
+    :param context:
+    :param verbose:
+    :return:
+    """
+    with ImpalaRunner(config=config, sql=sql, context=context,verbose=verbose) as runner:
+        df = runner.run_sql_block()
+
+    return df

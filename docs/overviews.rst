@@ -6,6 +6,6 @@ These overviews are generated from Jupyter notebooks that are
 
 .. toctree::
     :glob:
-    :maxdepth: 1
+    :maxdepth: 3
 
     example_notebooks/overviews/*

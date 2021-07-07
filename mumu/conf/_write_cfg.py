@@ -9,8 +9,6 @@
 # ================================================
 import os
 
-CONFIG_FILENAME = os.path.join(os.getcwd(), "project.cfg")
-
 
 def _default_config_file_path(file_name: str):
     templates_dir = os.path.join(os.path.dirname(__file__))
@@ -23,7 +21,7 @@ def _default_config():
     :return:
     """
     path = _default_config_file_path('default.cfg')
-    with open(path) as fh:
+    with open(path, 'r', encoding='utf8') as fh:
         return fh.read()
 
 
@@ -32,5 +30,7 @@ def write_config():
 
     :return:
     """
-    with open(CONFIG_FILENAME, 'w', encoding="utf8") as f:
+    config_filename = os.path.join(os.getcwd(), "project.cfg")
+
+    with open(config_filename, 'w', encoding="utf8") as f:
         f.write(_default_config())

@@ -14,16 +14,21 @@ from mumu.conf import write_config
 from mumu.utils import str_to_list
 
 
-def read_config():
-    """Read *.cfg file in your project.
+def read_config(cfg_file=None):
+    """Read project.cfg file in your project.
 
-    :return:
+    :param cfg_file: str, filepath of configurations
+    :return: project_conf, db_conf, hdfs_conf, email_conf, wwx_conf
     """
-    config_file = os.path.join(os.getcwd(), "project.cfg")
+    if cfg_file:
+        config_file = cfg_file
+    else:
+        config_file = os.path.join(os.getcwd(), "project.cfg")
 
     if not os.path.exists(config_file):
         write_config()
-        logging.warning("Please ")
+        logging.warning("🚄 Please complete configurations of your project.cfg,"
+                        "then execute `PROJECT_CONF, DB_CONF, HDFS_CONF, EMAIL_CONF, WWX_CONF = read_config()` again!")
 
     config = ConfigParser()
     config.read(config_file, encoding="utf8")
