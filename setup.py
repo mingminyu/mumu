@@ -31,7 +31,7 @@ setup(
     keywords=('machine-learning python impala hive sql monitor'
               'email airflow'),
     install_package_data=True,
-    install_requires=["impyla", "requests"],
+    install_requires=["impyla", "requests", "matplotlib"],
     zip_safe=False,
     extras_require={},
     description='mumu is an integrated tool for machine learning.'
