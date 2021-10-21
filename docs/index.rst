@@ -10,18 +10,14 @@ Welcome to Mumu documentation!
 安装
 =======
 
-Mumu can be installed `PyPI <https://pypi.org/project/mumu>`_::
+Mumu can be installed `PyPI <https://pypi.org/project/mumu>`_:
 
 .. tabs::
 
    .. code-tab:: bash
 
-   $ pip install mumu
+      $ pip install bash
 
-   .. code-tab:: python
-
-   def main():
-      pass
 
 .. toctree::
    :maxdepth: 2

@@ -12,4 +12,4 @@ Examples using work wechat robot to sending something(including messages, markdo
     :glob:
     :maxdepth: 1
 
-    example_notebooks/robots_examples/WorkWeChat.ipynb
+    notebooks/robots_examples/WorkWeChat.ipynb

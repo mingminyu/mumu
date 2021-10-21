@@ -8,4 +8,4 @@ These overviews are generated from Jupyter notebooks that are
     :glob:
     :maxdepth: 3
 
-    example_notebooks/overviews/*
+    notebooks/overviews/*

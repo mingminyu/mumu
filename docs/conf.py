@@ -19,7 +19,7 @@ sys.path.insert(0, os.path.abspath('..'))
 
 # make copy of notebooks in docs folder, as they must be here for sphinx to
 # pick them up properly.
-NOTEBOOKS_DIR = os.path.abspath('example_notebooks')
+NOTEBOOKS_DIR = os.path.abspath('notebooks')
 if os.path.exists(NOTEBOOKS_DIR):
     import warnings
     warnings.warn('example_notebooks directory exists, replacing...')
@@ -55,9 +55,9 @@ extensions = [
 ]
 
 # sphinx-tabs
-sphinx_tabs_valid_builders = ['linkcheck']
-sphinx_tabs_disable_tab_closing = True
-sphinx_tabs_disable_css_loading = True
+# sphinx_tabs_valid_builders = ['linkcheck']
+# sphinx_tabs_disable_tab_closing = True
+# sphinx_tabs_disable_css_loading = True
 
 autodoc_default_options = {
     'members': True,

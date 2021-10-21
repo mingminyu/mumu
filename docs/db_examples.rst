@@ -11,7 +11,7 @@ Impala
     :glob:
     :maxdepth: 2
 
-    example_notebooks/db_examples/Impala.ipynb
+    notebooks/db_examples/Impala.ipynb
 
 Hive
 ===============
@@ -20,4 +20,4 @@ Hive
     :glob:
     :maxdepth: 2
 
-    example_notebooks/db_examples/Hive.ipynb
+    notebooks/db_examples/Hive.ipynb

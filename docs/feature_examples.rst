@@ -12,7 +12,7 @@ Examples calculating features woe and iv value, and often used in Logistic Regre
     :glob:
     :maxdepth: 1
 
-    example_notebooks/feature_examples/WOE.ipynb
+    notebooks/feature_examples/WOE.ipynb
 
 EDA Examples
 ============
@@ -22,4 +22,4 @@ Examples of exploring data analysis.
     :glob:
     :maxdepth: 1
 
-    example_notebooks/feature_examples/EDA.ipynb
+    notebooks/feature_examples/EDA.ipynb
