@@ -13,6 +13,7 @@ Welcome to Mumu documentation!
 Mumu can be installed `PyPI <https://pypi.org/project/mumu>`_::
 
 .. tabs::
+
    .. code-tab:: bash
 
    $ pip install mumu
