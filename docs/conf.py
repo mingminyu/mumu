@@ -51,6 +51,7 @@ extensions = [
     # 'numpydoc',
     'nbsphinx',
     'sphinx_copybutton',
+    'sphinx-tabs',
 ]
 
 autodoc_default_options = {

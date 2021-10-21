@@ -4,4 +4,5 @@ recommonmark
 sphinx-autobuild
 sphinx_rtd_theme
 sphinx_copybutton
+sphinx-tabs
 jupyter

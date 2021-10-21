@@ -7,12 +7,13 @@ Welcome to Mumu documentation!
 ================================
 
 
-Install
+安装
 =======
 
 Mumu can be installed `PyPI <https://pypi.org/project/mumu>`_::
 
-   pip install mumu
+.. tabs:: Bash
+   $ pip install mumu
 
 
 .. toctree::
