@@ -50,6 +50,7 @@ extensions = [
     'sphinx_rtd_theme',
     # 'numpydoc',
     'nbsphinx',
+    'sphinx_copybutton',
 ]
 
 autodoc_default_options = {
