@@ -51,8 +51,13 @@ extensions = [
     # 'numpydoc',
     'nbsphinx',
     'sphinx_copybutton',
-    'sphinx-tabs',
+    'sphinx_tabs.tabs',
 ]
+
+# sphinx-tabs
+sphinx_tabs_valid_builders = ['linkcheck']
+sphinx_tabs_disable_tab_closing = True
+sphinx_tabs_disable_css_loading = True
 
 autodoc_default_options = {
     'members': True,
