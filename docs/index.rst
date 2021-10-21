@@ -16,7 +16,7 @@ Mumu can be installed `PyPI <https://pypi.org/project/mumu>`_:
 
    .. code-tab:: bash
 
-      $ pip install bash
+      $ pip install mumu
 
 
 .. toctree::
