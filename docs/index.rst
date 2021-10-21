@@ -12,7 +12,8 @@ Welcome to Mumu documentation!
 
 Mumu can be installed `PyPI <https://pypi.org/project/mumu>`_::
 
-.. tabs:: Bash
+.. tabs:: bash
+
    $ pip install mumu
 
 
