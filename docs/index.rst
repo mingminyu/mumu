@@ -12,11 +12,15 @@ Welcome to Mumu documentation!
 
 Mumu can be installed `PyPI <https://pypi.org/project/mumu>`_::
 
-.. tabs:: 
+.. tabs::
    .. code-tab:: bash
 
    $ pip install mumu
 
+   .. code-tab:: python
+
+   def main():
+      pass
 
 .. toctree::
    :maxdepth: 2
